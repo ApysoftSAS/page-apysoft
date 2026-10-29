@@ -6,14 +6,17 @@
   align-items: center;
   height: 100%;
   z-index: 999;
-  right: -12em;/* Inicialmente fuera de la pantalla a la derecha */
-  transition: right 0.3s ease; /* Agrega una transición suave a la propiedad right */
+  right: 1.6em;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
   opacity: 0;
 
 }
 
 .go-back.right-block{
-  right:1.6em ;
+  visibility: visible;
+  pointer-events: auto;
   padding: 0px;
 }
 
@@ -37,12 +40,17 @@
 .whatsapp-container {
     position: fixed;
     bottom: 5em;
-    right: -12em;/* Inicialmente fuera de la pantalla a la derecha */
-    transition: right 0.3s ease; /* Agrega una transición suave a la propiedad right */
+    right: 1.6em;
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
     z-index: 999;
   }
   .whatsapp-container.right-block {
-     right: 1.6em !important;
+     visibility: visible;
+     pointer-events: auto;
+     opacity: 1;
      padding: 0px;
   }
   
