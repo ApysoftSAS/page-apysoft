@@ -1,0 +1,22 @@
+.footer{
+    position: relative;
+    background-color: rgb(231, 224, 224);
+    height: 5em;
+    color: black !important;
+}
+
+#social a i
+{
+    color: black !important;
+}
+
+footer .flex-column.text-center.pt-2 .text-center a{
+    text-decoration: none;
+}
+/*#######################################*/
+@media (max-width: 800px) {
+    .footer{
+        margin-top: 0em;
+    }
+    
+  }

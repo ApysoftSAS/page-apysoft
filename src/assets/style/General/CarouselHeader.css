@@ -1,0 +1,172 @@
+#galeryHeader {
+    flex-grow: 1;
+    overflow: hidden;
+    height: calc(100vh - 70px);
+    /* Resta el height de nav al height de header */
+    width: 100%;
+  }
+  
+  #galeryHeader #carouselExampleCaptions #carousel-inner #carousel-item img {
+    height: calc(100vh - 70px);
+    width: 111%;
+    flex-grow: 1;
+    overflow: auto;
+    /*filter: brightness(50%);*/
+    /*filter: saturate(150%);*/
+    /*opacity: 0.7;*/
+  }
+  
+  #galeryHeader #carouselExampleCaptions #carousel-inner #carousel-item #page {
+    display: block;
+  }
+  
+  #galeryHeader #carouselExampleCaptions #carousel-inner #carousel-item #movil {
+    display: none;
+  }
+  #galeryHeader #carouselExampleCaptions #carousel-inner #carousel-item #information{
+    background-color: rgba(0, 0, 0, 0.048); /* Ajusta el valor de alfa según sea necesario */
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 0.5em;
+    margin-bottom: 01em;
+    padding: 0.1px;
+  }
+  
+  #galeryHeader #carouselExampleCaptions #carousel-inner #carousel-item h2 {
+    -webkit-text-stroke: 1.5px #000000c0;
+    font-weight: bold;
+    font-family: "Georgia", serif;
+    font-size: 4em;
+    letter-spacing: 0.5px; /* Puedes ajustar este valor según tus preferencias */
+  }
+  #galeryHeader #carouselExampleCaptions #carousel-inner #carousel-item p {
+    -webkit-text-stroke: 1.5px #000000c0;
+    font-weight: bold;
+    font-family: "Courier New", monospace;
+    font-size: 2em;
+    letter-spacing: 0.5px; /* Puedes ajustar este valor según tus preferencias */
+  }
+  
+  /* Estilos para resoluciones menores a  1366px */
+  @media screen and (max-width: 1366px) {
+    #galeryHeader {
+      height: 100vh;
+    }
+  }
+  
+  /* Muestra la sección para resoluciones mayores a 1280px */
+  @media screen and (min-width: 1280px) {
+    #galeryHeader {
+      height: 100vh;
+    }
+  }
+  
+  /* Estilos para resoluciones menores a  1279px */
+  @media screen and (max-width: 1279px) {
+    #header {
+      height: 100vh;
+    }
+  }
+  
+  /* Estilos para resoluciones menores a  1165px */
+  @media screen and (max-width: 1165px) {
+    #header {
+      height: 87vh;
+    }
+  
+    #galeryHeader #carouselExampleCaptions #carousel-inner #carousel-item img {
+      height: 87vh;
+    }
+  }
+    /* Estilos para resoluciones menores a  1165px */
+    @media screen and (max-width: 1024px) {
+    
+      #galeryHeader #carouselExampleCaptions #carousel-inner #carousel-item img {
+        height: 95vh;
+      }
+    }
+  /*#######################################*/
+  @media (max-width: 991px) {
+    #header {
+      height: 90.5vh;
+    }
+  }
+  /* Estilos para resoluciones menores a  840px */
+  @media screen and (max-width: 840px) {
+    #header {
+      height: 84vh;
+    }
+  
+    #galeryHeader #carouselExampleCaptions #carousel-inner #carousel-item img {
+      height: 86vh;
+    }
+    #galeryHeader #carouselExampleCaptions #carousel-inner #carousel-item h2 {
+      -webkit-text-stroke: 1px #000000ad;
+    }
+    #galeryHeader #carouselExampleCaptions #carousel-inner #carousel-item p {
+      -webkit-text-stroke: 1px #000000b2;
+    }
+  }
+  
+  /* Estilos para resoluciones menores a  830px */
+  @media screen and (max-width: 830px) {
+    #header {
+      height: 90vh;
+    }
+  
+    #galeryHeader #carouselExampleCaptions #carousel-inner #carousel-item img {
+      height: 87vh;
+    }
+  }
+    /* Estilos para resoluciones menores a  830px */
+    @media screen and (max-width: 820px) {
+      #header {
+        height: 90vh;
+      }
+    
+      #galeryHeader #carouselExampleCaptions #carousel-inner #carousel-item img {
+        height: 88vh;
+      }
+    }
+    
+  /* Estilos para resoluciones menores a  727px */
+  @media screen and (max-width: 727px) {
+    #galeryHeader #carouselExampleCaptions #carousel-inner #carousel-item #information{
+      padding:0.5em  !important;
+    }
+    
+    #header {
+      height: 93.3vh;
+    }
+  
+    #header a {
+      font-size: 0.5em;
+    }
+  
+    #galeryHeader #carouselExampleCaptions #carousel-inner #carousel-item img {
+      height: 87vh;
+    }
+  
+    #galeryHeader #carouselExampleCaptions #carousel-inner #carousel-item #page {
+      display: none;
+    }
+  
+    #galeryHeader #carouselExampleCaptions #carousel-inner #carousel-item #movil {
+      display: block;
+    }
+    #galeryHeader #carouselExampleCaptions #carousel-inner #carousel-item h2 {
+      -webkit-text-stroke: 1.5px #000000c0;
+      font-weight: bold;
+      font-family: "Georgia", serif;
+      font-size: 1.8em;
+      letter-spacing: 0.2px; /* Puedes ajustar este valor según tus preferencias */
+  
+    }
+    #galeryHeader #carouselExampleCaptions #carousel-inner #carousel-item p {
+      -webkit-text-stroke: 1.5px #000000c0;
+      font-weight: bold;
+      font-family: "Courier New", monospace;
+      font-size: 1.3em;
+      letter-spacing: 0.1px; /* Puedes ajustar este valor según tus preferencias */
+    }
+  }

@@ -1,0 +1,82 @@
+.section-our-service{
+    overflow-x: hidden;
+    background-color: rgba(242, 242, 242, 0.7);
+    color: black;
+    height: 60em;
+    padding-top: 5em;
+}
+.our-service-a{
+    position: relative;
+    left: 70em;
+    transition: left 0.8s ease; /* Agrega una transición suave a la propiedad right */
+  }
+  .our-service-a.left-block{
+    left: 0px;
+  }
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cards .card  {
+    transition: transform 0.8s ease; 
+    background-color: rgba(242, 242, 242, 0.59);
+    width: 20em;
+}
+.cards .card:hover  {
+    transform: scale(1.01);
+    background-color: rgba(242, 242, 242, 0.774);
+}
+.cards .card div {
+    padding: 1em;
+}
+.cards .card .card-body h5 {
+    text-align: center;
+    font-weight: bold;
+}
+.cards .card .card-body p {
+    text-align: justify;
+    letter-spacing: -0.8px;
+    padding: 1em;
+}
+.cards .card div img{
+    border-radius: 4%;
+    box-shadow: 0px 5px 5px 0px #adb5bd;
+    height: 10em;
+}
+.cards .card:hover img {
+    transform: scale(1.1);
+}
+
+  /*#######################################*/
+  @media (max-width: 1200px) {
+    .cards .card  {
+      width: 32%;
+  }
+  }
+  
+
+  /*#######################################*/
+@media (max-width: 991px) {
+  .our-service{
+    height: 79em;
+    padding-top: 5em;
+  }
+}
+
+  /*#######################################*/
+  @media (max-width: 770px) {
+    .cards .card  {
+      width: 48%;
+  }
+  }
+
+/*#######################################*/
+@media (max-width: 570px) {
+  .our-service{
+    position: relative;
+    height: 160em;
+  }
+  .cards .card  {
+    width: 100%;
+}
+}

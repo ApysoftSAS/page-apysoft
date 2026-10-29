@@ -1,0 +1,112 @@
+.about-us{
+    height: 32.6em;
+    padding-top:5em;
+    background-color: rgba(255, 255, 255, 0.685);
+}
+
+.about-us-a{
+    position: relative;
+    right: 70em;
+    transition: right 0.8s ease; /* Agrega una transición suave a la propiedad right */
+}
+
+.about-us-a.right-block{
+    right: 0px ;
+}
+
+/* Agrega el estilo para el div */
+.about{
+    width: 100px; /* ajusta según tus necesidades */
+    height: 100px; /* ajusta según tus necesidades */
+    background-color: #ccccccad; /* ajusta según tus necesidades */
+    margin-top: 500px; /* ajusta según tus necesidades */
+    
+  }
+   #img-about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.section-about-us .container .about-us-a{
+    --bs-gutter-x: 0px;
+}
+
+.section-about-us .container .about-us-a .row #img-about-us img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5em;
+    transition: box-shadow 0.5s, z-index 0.5s, transform 0.5s; /* Ajusta la duración según sea necesario*/ 
+}
+
+.section-about-us .container .about-us-a .row #information {
+    border-radius: 0.5em;
+    padding: 2em;
+    color: black;
+    transition: box-shadow 0.5s, z-index 0.5s, transform 0.5s; /* Ajusta la duración según sea necesario */
+    font-size: 1em;
+}
+.section-about-us .container .about-us-a .row #information p{
+    text-align: justify;
+    letter-spacing: 0.5px; /* Puedes ajustar este valor según tus preferencias */
+}
+
+/*#######################################*/
+@media (max-width: 991px) {
+    .about-us{
+        padding-top: 10em;
+        height: 64em;
+    }
+
+    .section-about-us .container  {
+        max-width: 39em !important;
+        padding: 0px !important;
+    }
+    .section-about-us .container .about-us-a .row #information{
+        text-align: justify;
+        letter-spacing: 0.2px; /* Puedes ajustar este valor según tus preferencias */
+        width: 100%;
+        padding:0px ;
+        margin: 0px;
+    }
+    .section-about-us .container .about-us-a .row #information div h1{
+    font-size: 3em;
+    } 
+    .section-about-us .container .about-us-a .row #information p{
+        font-size: 1.5em;
+        }
+    .section-about-us .container .about-us-a .row #img-about-us{
+        width: 100%;
+        height: 100%;
+    }
+
+  }
+/*#######################################*/
+@media (max-width: 800px) {
+    
+    .section-about-us .container .about-us-a.row{
+        --bs-gutter-x: 0px;
+    }
+  }
+/*#######################################*/
+@media (max-width: 700px) {
+    .about-us{
+        padding: 2em !important;
+        height:45em;
+    }
+
+    .section-about-us .container .about-us-a .row{
+        --bs-gutter-x: 0px;        
+    }
+
+    .section-about-us .container .about-us-a .row #information {
+        padding-top: 2em;
+        width: 100%;
+        font-size: 1.8em;
+    }    
+    .section-about-us .container .about-us-a .row #information p{
+        text-align: justify;
+        letter-spacing: 0.001px !important; /* Puedes ajustar este valor según tus preferencias */
+        font-size: 0.5em;
+
+    }
+  }

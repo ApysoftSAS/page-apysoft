@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+#header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+  }
+
+  .nav-option {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #020202;
+    position: relative;
+    overflow: hidden;
+    transition: width 1s ease-in-out;
+
+  }
+  /* Estilo del borde superior al pasar el ratón */
+  .nav-option::before,
+  .nav-option::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+  }
+
+  .nav-option::before {
+    right: 0;
+    width: 0;
+    border-top: 3px solid  #18b8fd;
+    transition: width 0.3s ease-in-out;
+  }
+
+  /* Borde inferior (de izquierda a derecha) */
+  .nav-option::after {
+        left: 0;
+        width: 0;
+        border-bottom: 3px solid #fe8907;
+        transition: width 0.3s ease-in-out;
+  }
+  .nav-option:hover {
+    background-color: #ffffff27;
+}
+
+  /* Cambiar el ancho del borde al pasar el ratón */
+  .nav-option:hover::before,
+  .nav-option:hover::after {
+    width: 100%;
+  }
+      /* Estilos para resoluciones menores a  830px */
+      @media screen and (max-width: 1024px) {
+        #header {
+          height: 100vh;
+        }
+      }
+
+  @media screen and (max-width: 830px) {
+    #header {
+      height: 92.5vh;
+    }
+  }
+      /* Estilos para resoluciones menores a  830px */
+      @media screen and (max-width: 820px) {
+        #header {
+          height: 93vh;
+        }
+      }
+  
+  @media screen and (max-width: 624px) {
+    #header {
+      height: 93.2vh;
+    }
+    div .tabs-container a{
+      font-size: 80%;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    div .tabs-container a{
+      font-size: 60%;
+    }
+  }
+
+  @media screen and (max-width: 406px) {
+    div .tabs-container a{
+      font-size: 55%;
+    }
+  }
+
+  
+  @media screen and (max-width: 392px) {
+    div .tabs-container a{
+      font-size: 50%;
+    }
+  }

@@ -1,0 +1,44 @@
+
+  .nav-option1 {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #020202 !important;
+    background-color: white !important;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Estilo del borde superior al pasar el ratón */
+  .nav-option1::before,
+  .nav-option1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+  }
+
+  .nav-option1::before {
+    right: 0;
+    width: 0;
+    border-top: 3px solid  #18b8fd;
+    transition: width 0.3s ease-in-out;
+  }
+
+  /* Borde inferior (de izquierda a derecha) */
+  .nav-option1::after {
+        left: 0;
+        width: 0;
+        border-bottom: 3px solid #fe8907;
+        transition: width 0.3s ease-in-out;
+  }
+  .nav-option1:hover {
+    background-color: #4bf6eb8e !important;
+}
+
+  /* Cambiar el ancho del borde al pasar el ratón */
+  .nav-option1:hover::before,
+  .nav-option1:hover::after {
+    width: 100%;
+  }
+

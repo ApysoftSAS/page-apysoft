@@ -1,0 +1,93 @@
+
+.go-back {
+  position: fixed;
+  bottom: 0px; /* Ajusta según sea necesario para la posición vertical */
+  display: flex;
+  align-items: center;
+  height: 100%;
+  z-index: 999;
+  right: -12em;/* Inicialmente fuera de la pantalla a la derecha */
+  transition: right 0.3s ease; /* Agrega una transición suave a la propiedad right */
+  opacity: 0;
+
+}
+
+.go-back.right-block{
+  right:1.6em ;
+  padding: 0px;
+}
+
+.go-back .go-back-a:hover {
+  text-decoration: none;
+}
+.go-back .go-back-a img{
+  width: 2em;
+  height: 2em;
+  transition:  0.3s ease; /* Agrega una transición suave a la propiedad right */
+}
+.go-back .go-back-a:hover {
+  text-decoration: none;
+  box-shadow: 0px 0px 23px rgba(152, 152, 153, 0.822);
+  border-radius: 2em ;
+}
+.go-back .go-back-a img:hover {
+  transform:scale(1.2);
+}
+
+.whatsapp-container {
+    position: fixed;
+    bottom: 5em;
+    right: -12em;/* Inicialmente fuera de la pantalla a la derecha */
+    transition: right 0.3s ease; /* Agrega una transición suave a la propiedad right */
+    z-index: 999;
+  }
+  .whatsapp-container.right-block {
+     right: 1.6em !important;
+     padding: 0px;
+  }
+  
+  .whatsapp-container.right-block a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .whatsapp-container.right-block img {
+    width: 2.5em;    
+    border-radius: 2em;
+  }
+
+  .whatsapp-container.right-block:hover {
+    transform:scale(1.2);
+  }
+
+  .rotate-vertical-center {
+    animation: rotate-vertical-center 0.8s;
+  }
+  
+  @keyframes rotate-vertical-center {
+    0%{transform:scale(1) rotateY(0)}
+    50%{transform:scale(1.1) rotateY(180deg)}
+    100%{transform:scale(1) rotateY(360deg)}}
+
+
+  @media screen and (max-width: 830px) {
+    .go-back.right-block{
+      right:0.6em ;
+      padding: 0px;
+    }
+  }
+    @media screen and (max-width: 720px) {
+      .go-back.right-block{
+        right:0.2em ;
+        padding: 0px;
+      }
+  .go-back .go-back-a img{
+    width: 1.5em;
+    height: 1.5em;
+  }
+  .whatsapp-container.right-block img{
+    width: 3em;
+  }
+  }
