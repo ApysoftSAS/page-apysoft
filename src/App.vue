@@ -7,9 +7,11 @@ import About from './views/home/About.vue'
 import WhyApysoft from './views/home/WhyApysoft.vue'
 import ContactUs from  './views/home/ContactUs.vue'
 import Service from './views/home/ServiceNew.vue'
+import SplashIntro from './components/general/SplashIntro.vue'
 
 </script>
 <template>
+  <SplashIntro></SplashIntro>
   <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
   <IconOption></IconOption>
   <Menu></Menu>
