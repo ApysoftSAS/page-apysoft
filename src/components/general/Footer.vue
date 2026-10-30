@@ -88,9 +88,9 @@ const scrollTo = (id) => {
             <h3 class="footer-col-title">Contacto</h3>
             <ul class="footer-contact-list" role="list">
               <li>
-                <a href="https://wa.me/573163784652" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Apysoft">
+                <a href="https://wa.me/573028365613" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Apysoft">
                   <i class="fab fa-whatsapp" aria-hidden="true"></i>
-                  +57 316 378 4652
+                  +57 302 836 5613
                 </a>
               </li>
               <li>
@@ -102,7 +102,7 @@ const scrollTo = (id) => {
               <li>
                 <span>
                   <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                  Colombia 🇨🇴
+                  Sede principal: Yopal, Casanare · Atención remota internacional
                 </span>
               </li>
             </ul>

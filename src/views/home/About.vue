@@ -18,7 +18,7 @@ const values = [
             Tecnología alineada con los objetivos de tu empresa
           </h2>
           <p class="about-text">
-            Apysoft es una empresa colombiana de desarrollo de software. Trabajamos con las empresas para entender sus procesos y definir soluciones digitales acordes con sus necesidades.
+            Apysoft SAS es una empresa de desarrollo de software con sede principal en Yopal, Casanare, Colombia. Trabajamos de forma remota con empresas de Colombia y otros países para entender sus procesos y crear soluciones digitales acordes con sus necesidades.
           </p>
           <p class="about-text">
             Cada proyecto comienza por comprender el reto, conversar sobre las alternativas y acordar un alcance que responda a las prioridades del negocio.
