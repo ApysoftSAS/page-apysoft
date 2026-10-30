@@ -88,9 +88,9 @@ const scrollTo = (id) => {
             <h3 class="footer-col-title">Contacto</h3>
             <ul class="footer-contact-list" role="list">
               <li>
-                <a href="https://wa.me/573028365613" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Apysoft">
+                <a href="https://wa.me/573204478206" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Apysoft">
                   <i class="fab fa-whatsapp" aria-hidden="true"></i>
-                  +57 302 836 5613
+                  +57 320 447 8206
                 </a>
               </li>
               <li>

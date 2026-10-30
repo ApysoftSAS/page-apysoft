@@ -11,7 +11,7 @@
     </a>
   </div>
   <div class="whatsapp-container" id="whatsapp-container">
-    <a href="https://wa.me/+573028365613" id="whatsapp-ico" class="whatsapp-ico" target="_blank">
+    <a href="https://wa.me/+573204478206" id="whatsapp-ico" class="whatsapp-ico" target="_blank">
       <img src="../../../public/images/ico/whatsapp.ico" alt="WhatsApp Icon de apysfot" id="whatsapp-data">
     </a>
   </div>

@@ -49,7 +49,7 @@ onUnmounted(() => {
     </a>
   </div>
   <div id="whatsapp-container" class="whatsapp-container" :class="{ 'right-block': isWhatsappVisible }">
-    <a href="https://wa.me/573028365613" id="whatsapp-ico" class="whatsapp-ico" target="_blank" rel="noopener noreferrer" aria-label="Contactar a Apysoft por WhatsApp">
+    <a href="https://wa.me/573204478206" id="whatsapp-ico" class="whatsapp-ico" target="_blank" rel="noopener noreferrer" aria-label="Contactar a Apysoft por WhatsApp">
       <img
         src="../../../public/images/ico/whatsapp.ico"
         alt=""
