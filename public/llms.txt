@@ -9,6 +9,20 @@
 - Consultoría tecnológica y transformación digital.
 - Servicios de nube AWS e integración de sistemas, plataformas y APIs.
 
+## Productos
+
+- DOKAPYS: plataforma web de automatización documental para el sector salud. Clasifica, renombra y organiza los soportes PDF de las facturas de salud por paciente y por factura, con reglas configurables. https://apysoft.com.co/productos/dokapys
+
+## Blog
+
+- Resolución 2284 de 2023 y su Anexo Técnico 2: cómo nombrar y enviar los soportes de la factura en salud. https://apysoft.com.co/blog/resolucion-2284-de-2023-anexo-tecnico-2
+- Qué es el software a la medida y cuándo conviene frente al software enlatado. El software a la medida es un programa que se diseña y se construye para los procesos de una empresa concreta, en lugar de adaptarse la empresa a un producto genérico. Conviene cuando tu operación tiene reglas propias que el software comercial no cubre o cuando necesitas conectar varios sistemas entre sí. https://apysoft.com.co/blog/que-es-software-a-la-medida
+- ¿Cuánto cuesta un software a la medida en Colombia? Factores que definen el precio. No existe un precio único: el costo de un software a la medida en Colombia depende del alcance, del número de funciones y de usuarios, de las integraciones con otros sistemas, del diseño y del soporte posterior. Por eso se cotiza después de entender el proceso que se quiere resolver. https://apysoft.com.co/blog/cuanto-cuesta-un-software-a-la-medida-en-colombia
+- Página web para empresas: qué debe tener y de qué depende su costo. La página web de una empresa debe decir con claridad qué ofrece, a quién y cómo contactarla; cargar rápido, verse bien en celular y poder ser encontrada en Google. Su costo depende del número de secciones, del diseño, de las funciones adicionales y de quién mantenga el contenido. https://apysoft.com.co/blog/pagina-web-para-empresas
+- Desarrollo de software y páginas web en Yopal, Casanare. Apysoft SAS es una empresa de desarrollo de software con sede principal en Yopal, Casanare, Colombia. Desarrolla software a la medida, páginas web e integraciones, y atiende de forma remota a empresas de Colombia y otros países. https://apysoft.com.co/blog/desarrollo-de-software-y-paginas-web-en-yopal-casanare
+- Qué hace una empresa de desarrollo de software y cómo elegir una. Una empresa de desarrollo de software analiza una necesidad de negocio, diseña la solución, la construye, la prueba, la pone en funcionamiento y le da soporte. Para elegir una, revisa cómo entiende tu problema, qué incluye su propuesta y cómo maneja los cambios y el soporte. https://apysoft.com.co/blog/que-hace-una-empresa-de-desarrollo-de-software
+- Transformación digital para pymes: qué es y por dónde empezar. La transformación digital en una empresa es cambiar la forma de trabajar apoyándose en tecnología: pasar procesos manuales a herramientas digitales, conectar la información y usar los datos para decidir. En una pyme se empieza por un proceso concreto, no por comprar tecnología. https://apysoft.com.co/blog/transformacion-digital-para-pymes
+
 ## Cobertura
 
 Apysoft tiene su sede principal en Yopal, Casanare, Colombia, y presta servicios de forma remota en Colombia y otros países.

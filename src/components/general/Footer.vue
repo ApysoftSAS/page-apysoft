@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue';
+import { useSectionNav } from '../../composables/useSectionNav';
 const year = ref(new Date().getFullYear());
 
 const links = [
@@ -16,13 +17,7 @@ const socials = [
   { label: 'Email',     icon: 'fas fa-envelope',  href: 'mailto:apysoft2023@gmail.com' },
 ];
 
-const scrollTo = (id) => {
-  const el = document.getElementById(id);
-  if (el) {
-    const y = el.getBoundingClientRect().top + window.scrollY - 80;
-    window.scrollTo({ top: y, behavior: 'smooth' });
-  }
-};
+const scrollTo = useSectionNav();
 </script>
 
 <template>
@@ -32,7 +27,7 @@ const scrollTo = (id) => {
         <div class="footer-grid">
           <!-- Columna 1: Brand -->
           <div class="footer-brand">
-            <a href="#hero" class="footer-logo" @click.prevent="scrollTo('hero')" aria-label="Apysoft SAS - Inicio">
+            <a href="/" class="footer-logo" @click.prevent="scrollTo('hero')" aria-label="Apysoft SAS - Inicio">
               <img src="/images/desk/logo/logo.png" alt="Logo Apysoft SAS" class="footer-logo-img">
               <span class="footer-logo-text">Apysoft</span>
             </a>
@@ -59,12 +54,12 @@ const scrollTo = (id) => {
           <div class="footer-col">
             <h3 class="footer-col-title">Servicios</h3>
             <ul class="footer-list" role="list">
-              <li><a href="#our-service" @click.prevent="scrollTo('our-service')">Desarrollo Web</a></li>
-              <li><a href="#our-service" @click.prevent="scrollTo('our-service')">Software a Medida</a></li>
-              <li><a href="#our-service" @click.prevent="scrollTo('our-service')">Consultoría Tecnológica</a></li>
-              <li><a href="#our-service" @click.prevent="scrollTo('our-service')">Transformación Digital</a></li>
-              <li><a href="#our-service" @click.prevent="scrollTo('our-service')">Nube AWS</a></li>
-              <li><a href="#our-service" @click.prevent="scrollTo('our-service')">Integraciones</a></li>
+              <li><a href="/#our-service" @click.prevent="scrollTo('our-service')">Desarrollo Web</a></li>
+              <li><a href="/#our-service" @click.prevent="scrollTo('our-service')">Software a Medida</a></li>
+              <li><a href="/#our-service" @click.prevent="scrollTo('our-service')">Consultoría Tecnológica</a></li>
+              <li><a href="/#our-service" @click.prevent="scrollTo('our-service')">Transformación Digital</a></li>
+              <li><a href="/#our-service" @click.prevent="scrollTo('our-service')">Nube AWS</a></li>
+              <li><a href="/#our-service" @click.prevent="scrollTo('our-service')">Integraciones</a></li>
             </ul>
           </div>
 
@@ -74,12 +69,14 @@ const scrollTo = (id) => {
             <ul class="footer-list" role="list">
               <li v-for="link in links" :key="link.id">
                 <a
-                  :href="`#${link.id}`"
+                  :href="`/#${link.id}`"
                   @click.prevent="scrollTo(link.id)"
                 >
                   {{ link.label }}
                 </a>
               </li>
+              <li><RouterLink to="/productos/dokapys">DOKAPYS</RouterLink></li>
+              <li><RouterLink to="/blog">Blog</RouterLink></li>
             </ul>
           </div>
 

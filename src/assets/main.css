@@ -3,6 +3,7 @@
    El #app es full-width, sin grid de 2 columnas. */
 
 @import './base.css';
+@import './pages.css';
 
 #app {
   width: 100%;

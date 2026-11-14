@@ -4,12 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite-ssg build",
     "preview": "vite preview",
     "generate-sitemap": "node scripts/generateSitemap.js"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.4.2",
+    "@unhead/vue": "^2.1.17",
     "axios": "^1.6.0",
     "bootstrap": "^5.3.2",
     "chartjs": "^0.3.24",
@@ -24,7 +25,7 @@
     "pinia-plugin-persistedstate": "^3.2.0",
     "sitemap": "^7.1.1",
     "sweetalert2": "^11.10.1",
-    "vue": "^3.3.10",
+    "vue": "^3.5.45",
     "vue-chartjs": "^5.2.0",
     "vue-router": "^4.2.5",
     "vuejs-paginate-next": "^1.0.2"
@@ -32,6 +33,7 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.4.0",
     "@vitejs/plugin-vue-jsx": "^3.0.2",
-    "vite": "^4.4.11"
+    "vite": "^4.4.11",
+    "vite-ssg": "^28.3.0"
   }
 }

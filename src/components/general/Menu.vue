@@ -1,5 +1,8 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
+import { useSectionNav } from '../../composables/useSectionNav';
+
+const goToSection = useSectionNav();
 
 const isScrolled = ref(false);
 const menuOpen = ref(false);
@@ -16,12 +19,7 @@ const closeMenuOnEscape = (event) => {
 
 const scrollTo = (id) => {
   menuOpen.value = false;
-  const el = document.getElementById(id);
-  if (el) {
-    const offset = 80;
-    const y = el.getBoundingClientRect().top + window.scrollY - offset;
-    window.scrollTo({ top: y, behavior: 'smooth' });
-  }
+  goToSection(id);
 };
 
 onMounted(() => {
@@ -40,17 +38,19 @@ onUnmounted(() => {
   >
     <div class="nav-container">
       <!-- Logo -->
-      <a href="#" class="nav-logo" @click.prevent="scrollTo('hero')" aria-label="Apysoft SAS - Inicio">
+      <a href="/" class="nav-logo" @click.prevent="scrollTo('hero')" aria-label="Apysoft SAS - Inicio">
         <img src="/images/desk/logo/logo.png" alt="Logo Apysoft SAS" class="logo-img">
         <span class="logo-text">Apysoft</span>
       </a>
 
       <!-- Links Desktop -->
       <nav class="nav-links" aria-label="Navegación principal">
-        <a href="#our-service" class="nav-link" @click.prevent="scrollTo('our-service')">Servicios</a>
-        <a href="#why-apysoft" class="nav-link" @click.prevent="scrollTo('why-apysoft')">¿Por qué nosotros?</a>
-        <a href="#about-us" class="nav-link" @click.prevent="scrollTo('about-us')">Nosotros</a>
-        <a href="#contact-us" class="nav-cta" @click.prevent="scrollTo('contact-us')">Contáctanos</a>
+        <a href="/#our-service" class="nav-link" @click.prevent="scrollTo('our-service')">Servicios</a>
+        <RouterLink to="/productos/dokapys" class="nav-link">Productos</RouterLink>
+        <RouterLink to="/blog" class="nav-link">Blog</RouterLink>
+        <a href="/#why-apysoft" class="nav-link" @click.prevent="scrollTo('why-apysoft')">¿Por qué nosotros?</a>
+        <a href="/#about-us" class="nav-link" @click.prevent="scrollTo('about-us')">Nosotros</a>
+        <a href="/#contact-us" class="nav-cta" @click.prevent="scrollTo('contact-us')">Contáctanos</a>
       </nav>
 
       <!-- Hamburger -->
@@ -68,10 +68,12 @@ onUnmounted(() => {
 
     <!-- Menú Móvil -->
     <nav id="mobile-navigation" class="nav-mobile" :class="{ open: menuOpen }" aria-label="Menú móvil">
-      <a href="#our-service"  @click.prevent="scrollTo('our-service')">Servicios</a>
-      <a href="#why-apysoft" @click.prevent="scrollTo('why-apysoft')">¿Por qué nosotros?</a>
-      <a href="#about-us"    @click.prevent="scrollTo('about-us')">Nosotros</a>
-      <a href="#contact-us"  @click.prevent="scrollTo('contact-us')" class="mobile-cta">Contáctanos</a>
+      <a href="/#our-service"  @click.prevent="scrollTo('our-service')">Servicios</a>
+      <RouterLink to="/productos/dokapys" @click="menuOpen = false">Productos</RouterLink>
+      <RouterLink to="/blog" @click="menuOpen = false">Blog</RouterLink>
+      <a href="/#why-apysoft" @click.prevent="scrollTo('why-apysoft')">¿Por qué nosotros?</a>
+      <a href="/#about-us"    @click.prevent="scrollTo('about-us')">Nosotros</a>
+      <a href="/#contact-us"  @click.prevent="scrollTo('contact-us')" class="mobile-cta">Contáctanos</a>
     </nav>
   </header>
 </template>
@@ -135,7 +137,11 @@ onUnmounted(() => {
 }
 
 @media (min-width: 768px) {
-  .nav-links { display: flex; }
+  .nav-links { display: flex; white-space: nowrap; }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .nav-links { gap: var(--space-4); }
 }
 
 .nav-link {

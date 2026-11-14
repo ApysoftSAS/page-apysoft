@@ -2,13 +2,7 @@
 import Footer from './components/general/Footer.vue'
 import Menu from './components/general/Menu.vue'
 import IconOption from './components/general/IconOption.vue'
-import CarouselHeader from './components/general/CarouselHeader.vue'
-import About from './views/home/About.vue'
-import WhyApysoft from './views/home/WhyApysoft.vue'
-import ContactUs from  './views/home/ContactUs.vue'
-import Service from './views/home/ServiceNew.vue'
 import SplashIntro from './components/general/SplashIntro.vue'
-
 </script>
 <template>
   <SplashIntro></SplashIntro>
@@ -16,13 +10,9 @@ import SplashIntro from './components/general/SplashIntro.vue'
   <IconOption></IconOption>
   <Menu></Menu>
   <main id="main-content" tabindex="-1">
-    <CarouselHeader></CarouselHeader>
-    <About class="about-us" id="about-us"></About>
-    <Service class="our-service" id="our-service"></Service>
-    <WhyApysoft class="why-apysoft" id="why-apysoft"></WhyApysoft>
-    <ContactUs class="contact-us" id="contact-us"></ContactUs>
+    <RouterView />
   </main>
-  <Footer class="footer" id="footer" ></Footer>
+  <Footer class="footer" id="footer"></Footer>
 </template>
 
 <style>
@@ -46,4 +36,3 @@ import SplashIntro from './components/general/SplashIntro.vue'
   scroll-margin-top: 5rem;
 }
 </style>
- 

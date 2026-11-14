@@ -10,6 +10,8 @@ export default defineConfig({
     vue(),
     vueJsx(),
   ],
+  // Un index.html por ruta: /blog/index.html, /productos/dokapys/index.html
+  ssgOptions: { dirStyle: 'nested', formatting: 'none' },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
